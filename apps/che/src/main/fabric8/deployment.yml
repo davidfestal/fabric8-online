@@ -105,11 +105,6 @@ spec:
             configMapKeyRef:
               key: "che-openshift-secure-routes"
               name: "che"
-        - name: "CHE_DOCKER_SERVER__EVALUATION__STRATEGY_SECURE_EXTERNAL_URLS"
-          valueFrom:
-            configMapKeyRef:
-              key: "che-secure-external-urls"
-              name: "che"
         - name: "CHE_OPENSHIFT_SERVER_INACTIVE_STOP_TIMEOUT_MS"
           valueFrom:
             configMapKeyRef:
